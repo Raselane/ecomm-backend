@@ -4,7 +4,7 @@ const app = express();
 require('dotenv').config();
 const productsRoute = require("./routes/products")
 const usersRoute = require('./routes/users');
-import cors from 'cors';
+const cors =  require('cors');
 
 const PORT = process.env.PORT || 3001;
 
