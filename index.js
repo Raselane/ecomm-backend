@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 const app = express();
 require('dotenv').config();
 const productsRoute = require("./routes/products")
-const usersRoute = require('./routes/users')
+const usersRoute = require('./routes/users');
+import cors from 'cors';
 
 const PORT = process.env.PORT || 3001;
 
