@@ -4,9 +4,9 @@ const Product = require('../models/products');
 
 // Get all Products
 router.get("/", async(req, res)=>{
-    const products = await Product.find();
+    const products = await Product.find({});
     if(!products) res.status(500).send("Something went wrong",error)
-    res.send(products);
+    res.status(200).json(products);
 })
 
 // Create Product
