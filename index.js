@@ -8,6 +8,7 @@ const usersRoute = require('./routes/users')
 const PORT = process.env.PORT || 3001;
 
 // Middleware
+app.use(cors());
 app.use(express.json()) //We are telling our server that we will be posting json data
 app.use(express.urlencoded({extended: true})) // We are telling our server that we will also post data as arrays, array of objects
 
